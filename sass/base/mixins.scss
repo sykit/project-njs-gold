@@ -1,0 +1,28 @@
+@mixin theme($color: black) {
+   &:hover,
+   &:active,
+   &:focus{
+      color: $color;
+
+      &:focus,
+      &:active,
+      &:hover{
+         color: $color;
+      }
+   }
+}
+
+
+@mixin menutheme($color: #000){
+   &:hover,
+   &:active,
+   &:focus{
+      color: $color;
+
+      &:focus,
+      &:active,
+      &:hover{
+         color: $color;
+      }
+   }
+}

@@ -1,0 +1,36 @@
+.card{
+    border-radius: 4px;
+    background-color: $light;
+    border: 1px solid 1px solid #ccc;
+    padding: 0;
+
+    @media #{$media-not-desktop} {
+        padding: 16px;
+    }
+}
+
+.card-top{
+    border-radius: 4px;
+    background-color: $light;
+    border: 1px solid $light;
+    padding: 0;
+
+    @media #{$media-not-desktop} {
+        padding: 16px;
+    }
+}
+
+.card-big{
+    display: flex;
+    gap: 5;
+    line-height: normal;
+    
+
+    .child{
+        margin-right: 8px;
+
+        .gogo {
+            width: 90%;
+        }
+    }
+}

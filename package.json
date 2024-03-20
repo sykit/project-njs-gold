@@ -1,0 +1,32 @@
+{
+  "name": "NJS SCM",
+  "version": "1.0.0",
+  "description": "Hydroflow app",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run start",
+    "sass": "sass --watch --update --style=expanded sass/style.scss:public/css/style.css",
+    "sass-prod": "sass --no-source-map --style=compressed sass/style.scss:public/css/style.css",
+    "js": "uglifyjs-folder public/js/core/ -o public/js/core.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ridwanzal/hydro-flow-app.git"
+  },
+  "keywords": [
+    "hydroflow"
+  ],
+  "author": "M. Ridwan Zalbina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ridwanzal/hydro-flow-app/issues"
+  },
+  "homepage": "https://github.com/ridwanzal/hydro-flow-app#readme",
+  "devDependencies": {
+    "sass": "^1.64.1"
+  },
+  "dependencies": {
+    "uglifycss": "^0.0.29",
+    "uglifyjs-folder": "^3.3.0"
+  }
+}
